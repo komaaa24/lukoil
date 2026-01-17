@@ -2,21 +2,21 @@ module.exports = {
   apps: [
     {
       name: 'oil-bot',
-      script: 'dist/bot/index.js',
+      script: 'dist/src/bot/index.js',
       env: {
         NODE_ENV: 'production',
       },
     },
     {
       name: 'oil-worker',
-      script: 'dist/jobs/workers.js',
+      script: 'dist/src/jobs/workers.js',
       env: {
         NODE_ENV: 'production',
       },
     },
     {
       name: 'oil-scheduler',
-      script: 'dist/jobs/schedulers.js',
+      script: 'dist/src/jobs/schedulers.js',
       env: {
         NODE_ENV: 'production',
       },

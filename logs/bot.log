@@ -36,3 +36,47 @@ query: SELECT "User"."id" AS "User_id", "User"."telegramId" AS "User_telegramId"
 query: START TRANSACTION
 query: INSERT INTO "scan_events"("id", "tokenRaw", "scannedAt", "source", "userId", "productTokenId") VALUES (DEFAULT, $1, $2, $3, $4, $5) RETURNING "id", "source" -- PARAMETERS: ["UNKNOWN","2026-01-17T12:42:56.662Z","DEEPLINK","2ce927b6-b04f-4cde-b4af-081cf2ec2896",null]
 query: COMMIT
+[18:19:54.752] DEBUG: Incoming update
+    from: {
+      "id": 7789445876,
+      "is_bot": false,
+      "first_name": "Камолиддин Тошпулатов",
+      "username": "Kamoliddin_programmsoft",
+      "language_code": "en"
+    }
+    updateType: 250880313
+query: SELECT "User"."id" AS "User_id", "User"."telegramId" AS "User_telegramId", "User"."username" AS "User_username", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."phoneNumber" AS "User_phoneNumber", "User"."languageCode" AS "User_languageCode", "User"."vehicleBrand" AS "User_vehicleBrand", "User"."oilType" AS "User_oilType", "User"."mileageMode" AS "User_mileageMode", "User"."mileageCurrent" AS "User_mileageCurrent", "User"."mileageThreshold" AS "User_mileageThreshold", "User"."referralCode" AS "User_referralCode", "User"."points" AS "User_points", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "users" "User" WHERE (("User"."telegramId" = $1)) LIMIT 1 -- PARAMETERS: ["7789445876"]
+query: SELECT "User"."id" AS "User_id", "User"."telegramId" AS "User_telegramId", "User"."username" AS "User_username", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."phoneNumber" AS "User_phoneNumber", "User"."languageCode" AS "User_languageCode", "User"."vehicleBrand" AS "User_vehicleBrand", "User"."oilType" AS "User_oilType", "User"."mileageMode" AS "User_mileageMode", "User"."mileageCurrent" AS "User_mileageCurrent", "User"."mileageThreshold" AS "User_mileageThreshold", "User"."referralCode" AS "User_referralCode", "User"."points" AS "User_points", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "users" "User" WHERE "User"."id" IN ($1) -- PARAMETERS: ["2ce927b6-b04f-4cde-b4af-081cf2ec2896"]
+query: START TRANSACTION
+query: INSERT INTO "scan_events"("id", "tokenRaw", "scannedAt", "source", "userId", "productTokenId") VALUES (DEFAULT, $1, $2, $3, $4, $5) RETURNING "id", "source" -- PARAMETERS: ["UNKNOWN","2026-01-17T13:19:54.752Z","DEEPLINK","2ce927b6-b04f-4cde-b4af-081cf2ec2896",null]
+query: COMMIT
+[18:20:31.541] DEBUG: Incoming update
+    from: {
+      "id": 7789445876,
+      "is_bot": false,
+      "first_name": "Камолиддин Тошпулатов",
+      "username": "Kamoliddin_programmsoft",
+      "language_code": "en"
+    }
+    updateType: 250880314
+query: SELECT "User"."id" AS "User_id", "User"."telegramId" AS "User_telegramId", "User"."username" AS "User_username", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."phoneNumber" AS "User_phoneNumber", "User"."languageCode" AS "User_languageCode", "User"."vehicleBrand" AS "User_vehicleBrand", "User"."oilType" AS "User_oilType", "User"."mileageMode" AS "User_mileageMode", "User"."mileageCurrent" AS "User_mileageCurrent", "User"."mileageThreshold" AS "User_mileageThreshold", "User"."referralCode" AS "User_referralCode", "User"."points" AS "User_points", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "users" "User" WHERE (("User"."telegramId" = $1)) LIMIT 1 -- PARAMETERS: ["7789445876"]
+query: SELECT "User"."id" AS "User_id", "User"."telegramId" AS "User_telegramId", "User"."username" AS "User_username", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."phoneNumber" AS "User_phoneNumber", "User"."languageCode" AS "User_languageCode", "User"."vehicleBrand" AS "User_vehicleBrand", "User"."oilType" AS "User_oilType", "User"."mileageMode" AS "User_mileageMode", "User"."mileageCurrent" AS "User_mileageCurrent", "User"."mileageThreshold" AS "User_mileageThreshold", "User"."referralCode" AS "User_referralCode", "User"."points" AS "User_points", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "users" "User" WHERE "User"."id" IN ($1) -- PARAMETERS: ["2ce927b6-b04f-4cde-b4af-081cf2ec2896"]
+query: START TRANSACTION
+query: INSERT INTO "scan_events"("id", "tokenRaw", "scannedAt", "source", "userId", "productTokenId") VALUES (DEFAULT, $1, $2, $3, $4, $5) RETURNING "id", "source" -- PARAMETERS: ["UNKNOWN","2026-01-17T13:20:31.541Z","DEEPLINK","2ce927b6-b04f-4cde-b4af-081cf2ec2896",null]
+query: COMMIT
+query: SELECT "User"."id" AS "User_id", "User"."telegramId" AS "User_telegramId", "User"."username" AS "User_username", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."phoneNumber" AS "User_phoneNumber", "User"."languageCode" AS "User_languageCode", "User"."vehicleBrand" AS "User_vehicleBrand", "User"."oilType" AS "User_oilType", "User"."mileageMode" AS "User_mileageMode", "User"."mileageCurrent" AS "User_mileageCurrent", "User"."mileageThreshold" AS "User_mileageThreshold", "User"."referralCode" AS "User_referralCode", "User"."points" AS "User_points", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "users" "User" WHERE (("User"."telegramId" = $1)) LIMIT 1 -- PARAMETERS: ["7789445876"]
+[18:20:33.053] DEBUG: Incoming update
+    from: {
+      "id": 7789445876,
+      "is_bot": false,
+      "first_name": "Камолиддин Тошпулатов",
+      "username": "Kamoliddin_programmsoft",
+      "language_code": "en"
+    }
+    updateType: 250880315
+query: SELECT "User"."id" AS "User_id", "User"."telegramId" AS "User_telegramId", "User"."username" AS "User_username", "User"."firstName" AS "User_firstName", "User"."lastName" AS "User_lastName", "User"."phoneNumber" AS "User_phoneNumber", "User"."languageCode" AS "User_languageCode", "User"."vehicleBrand" AS "User_vehicleBrand", "User"."oilType" AS "User_oilType", "User"."mileageMode" AS "User_mileageMode", "User"."mileageCurrent" AS "User_mileageCurrent", "User"."mileageThreshold" AS "User_mileageThreshold", "User"."referralCode" AS "User_referralCode", "User"."points" AS "User_points", "User"."createdAt" AS "User_createdAt", "User"."updatedAt" AS "User_updatedAt" FROM "users" "User" WHERE "User"."id" IN ($1) -- PARAMETERS: ["2ce927b6-b04f-4cde-b4af-081cf2ec2896"]
+query: START TRANSACTION
+query: INSERT INTO "scan_events"("id", "tokenRaw", "scannedAt", "source", "userId", "productTokenId") VALUES (DEFAULT, $1, $2, $3, $4, $5) RETURNING "id", "source" -- PARAMETERS: ["UNKNOWN","2026-01-17T13:20:33.053Z","DEEPLINK","2ce927b6-b04f-4cde-b4af-081cf2ec2896",null]
+query: COMMIT
+[ioredis] Unhandled error event: Error: connect ECONNREFUSED 127.0.0.1:6379
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1611:16)

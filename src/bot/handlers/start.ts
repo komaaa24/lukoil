@@ -67,7 +67,7 @@ export const registerStartHandler = (bot: Bot<BotContext>) => {
         ctx.session.awaitingPhone = true;
         await ctx.reply(
           tokenValid
-            ? 'Rahmat! Telefon raqamingizni yuboring, shunda eslatmalarni yoqamiz.'
+            ? '✅ Siz zamonaviy dvigatellar uchun sifatli moyni xarid qildingiz — ishonchli tanlov, barqaror haydov!\n🎁 Bonuslar va eslatmalar uchun kontaktingizni biz bilan ulashing.'
             : 'Token topilmadi yoki noto‘g‘ri. Baribir telefon raqamingizni yuboring.',
           { reply_markup: buildContactRequestKeyboard() },
         );
